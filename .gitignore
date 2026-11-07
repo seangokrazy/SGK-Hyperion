@@ -1,0 +1,13 @@
+build/
+dist/
+__pycache__/
+*.pyc
+*.pdb
+*.ilk
+*.obj
+Library/
+User/
+catalog.tsv
+Patches/
+Samples/
+Wavetables/
