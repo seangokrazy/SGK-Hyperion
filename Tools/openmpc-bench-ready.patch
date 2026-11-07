@@ -1,0 +1,24 @@
+--- bench.c
++++ bench-ready.c
+@@ -147,6 +147,7 @@
+ }
+ 
+ int main(int argc, char **argv) {
++    setvbuf(stdout,0,_IONBF,0);
+     const char *path = 0, *vlist = "1,4,8,16";
+     double secs = 5;
+     int json = 0;
+@@ -174,6 +175,13 @@
+     fx->dispatcher(fx, effSetBlockSize, 0, BLOCK, 0, 0);
+     fx->dispatcher(fx, effMainsChanged, 0, 1, 0, 0);
+     fx->dispatcher(fx, effStartProcess, 0, 0, 0, 0);
++    /* Hyperion loads on a worker. Wait for audible READY; otherwise this
++       unpaced offline benchmark can measure silence before I/O completes. */
++    for(int wait=0;wait<3000&&fx->getParameter(fx,14)<.5f;++wait){
++        fx->processReplacing(fx,ins,outs,BLOCK);
++        struct timespec pause={0,10000000};nanosleep(&pause,0);
++    }
++    if(fx->getParameter(fx,14)<.5f){fprintf(stderr,"Hyperion library was not ready; no CPU result recorded\n");return 2;}
+     double open_ms = (now_us(CLOCK_MONOTONIC) - o0) / 1e3;
+     synth = (fx->flags & (1 << 8)) != 0;
+ 
