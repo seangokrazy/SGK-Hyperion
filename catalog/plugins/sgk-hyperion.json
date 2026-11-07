@@ -1,0 +1,17 @@
+{
+  "id": "sgk-hyperion",
+  "name": "SGK Hyperion",
+  "author": "SeanGoKrazy",
+  "repo": "SeanGoKrazy/SGK-Hyperion",
+  "kind": "instrument",
+  "license": "MIT",
+  "summary": "Independent multi-engine player with a gold touchscreen browser, favorites and editable preset FX rack. Requires separately supplied compatible content.",
+  "style": "sampler",
+  "tags": [
+    "rompler",
+    "synth",
+    "fx-rack"
+  ],
+  "screenshot": "https://raw.githubusercontent.com/SeanGoKrazy/SGK-Hyperion/v0.1.2/docs/screenshots/native-layout-preview.png",
+  "homepage": "https://github.com/SeanGoKrazy/SGK-Hyperion"
+}
