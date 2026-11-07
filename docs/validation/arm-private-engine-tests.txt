@@ -1,0 +1,20 @@
+Initial Solo Trumpet; startup 0.092 sec; RSS 8788 KiB
+1 notes: 5.56% of one core, median 0.298 ms, max 0.393 ms
+4 notes: 6.92% of one core, median 0.370 ms, max 0.623 ms
+8 notes: 8.66% of one core, median 0.463 ms, max 0.530 ms
+16 notes: 12.30% of one core, median 0.659 ms, max 1.071 ms
+Hard Tubular Bell: 8 notes 56.82% of one core, max 4.133 ms, peak 0.2936, RSS 8804 KiB
+Gangsta Whine: 8 notes 9.86% of one core, max 0.915 ms, peak 0.4481, RSS 5648 KiB
+Dark Pulsator: 8 notes 14.49% of one core, max 0.857 ms, peak 0.4094, RSS 7152 KiB
+Full Bars: 8 notes 26.78% of one core, max 2.193 ms, peak 0.0579, RSS 7152 KiB
+Shutdown 0.005 sec; RSS 4960 KiB
+PASS ARM module, PCM/FX, polyphony, timing, browser/search, pages, state and teardown
+Signal regression max abs error 5.55111512312578e-17
+FX 1 checksums -0.050199 -0.050199; before 2.806 after 2.438 % one core; reduction 13.1%
+FX 10 checksums -0.0460937 -0.0460937; before 1.375 after 1.014 % one core; reduction 26.3%
+FX 20 checksums 0.0883179 0.0883179; before 2.335 after 1.972 % one core; reduction 15.6%
+FX 60 checksums -0.049349 -0.049349; before 2.457 after 1.560 % one core; reduction 36.5%
+FX 81 checksums -0.147853 -0.147853; before 1.082 after 0.723 % one core; reduction 33.2%
+FX 92 checksums -0.108 -0.108; before 2.175 after 0.848 % one core; reduction 61.0%
+FX 100 checksums -0.20791 -0.20791; before 2.044 after 1.517 % one core; reduction 25.8%
+FX 102 checksums -0.0568212 -0.0568212; before 1.102 after 0.647 % one core; reduction 41.3%

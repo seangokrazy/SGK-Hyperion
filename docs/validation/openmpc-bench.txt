@@ -1,0 +1,11 @@
+plugin /storage/SGK_Hyperion_Public_Test/sgk_hyperion.so: instrument, 288 params, open 102.5 ms; block 128 @ 44100 Hz = 2902 us budget
+stage               mean%     p99%     max%  threads%    peak
+idle                  4.9      5.5      5.6       0.0    0.00
+1 voices              5.6      6.4      6.9       0.0    0.04
+4 voices              7.6      9.0      9.4       0.0    0.11
+8 voices             10.3     12.9     13.2       0.0    0.20
+16 voices            15.6     19.9     21.4       0.0    0.37
+q-link sweep          2.5     23.0     26.1       0.0    0.50
+release tail          0.7      4.1      4.3       0.0    0.01
+worst p99 23.0%, worst block 26.1%, background threads up to 0.0% of a core -> WARN
+{"plugin":"/storage/SGK_Hyperion_Public_Test/sgk_hyperion.so","instrument":1,"open_ms":102.5,"p99_pct":23.0,"max_pct":26.1,"threads_pct":0.0,"verdict":"WARN"}

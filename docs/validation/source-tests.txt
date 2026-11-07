@@ -1,0 +1,2 @@
+2026-11-07 Windows x64 CMake Release
+8/8 passed: AnalogTests, FmTests, WaveFxTests, FxEditTests, FastSineTests, DecoderTests, DspTests, InstrumentTests.
